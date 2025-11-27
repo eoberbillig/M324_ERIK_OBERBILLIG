@@ -37,9 +37,6 @@ jobs:
   virus-scan:
     runs-on: ubuntu-latest
 
-    # ❗ Scanner testweise überspringen (später entfernen!)
-    if: false
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
