@@ -1,0 +1,25 @@
+{
+  "name": "task-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha \"**/*.test.js\"",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "start": "npm run format && npm run lint && npm test && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0"
+  },
+  "dependencies": {
+    "mocha": "^11.7.4",
+    "prettier": "^3.6.2"
+  }
+}
