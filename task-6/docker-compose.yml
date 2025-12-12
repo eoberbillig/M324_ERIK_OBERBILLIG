@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: mysql:latest
+    build: .
     container_name: mysql-demo
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -22,7 +22,6 @@ services:
       - mysql
     environment:
       PMA_HOST: mysql
-      PMA_PORT: 3306
     ports:
       - "8080:80"
     networks:
