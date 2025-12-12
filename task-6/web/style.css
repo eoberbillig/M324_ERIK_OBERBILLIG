@@ -1,0 +1,89 @@
+/* Reset & Basics */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Card */
+.container {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 14px;
+  width: 520px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: slideUp 0.8s ease-out;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1d2671;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+thead {
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: white;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  text-align: left;
+}
+
+tbody tr {
+  background: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+tbody tr:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
